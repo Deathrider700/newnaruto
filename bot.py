@@ -9,7 +9,7 @@ from playwright.async_api import async_playwright
 import telebot
 import crypto
 
-BOT_TOKEN = "7411456530:AAGxdudOrhnAS-AlaAdHq2RmOxHeHQ3gjEo"
+BOT_TOKEN = "7723141105:AAGohGA_CJoPmAiIGyg-zjlXczdHsfhZLXg"
 BIN_API_URL = "https://lookup.binlist.net"
 bot = telebot.TeleBot(BOT_TOKEN)
 
@@ -136,7 +136,7 @@ async def simulate_bmc_payment(card, user_id):
     return result
 
 def format_message(card, result, bin_info, gateway):
-    return f"✵ PRVT CHECKER ✵\n------------------------------------------------\nCARD {card['number']}|{card['expiry_month']}|{card['expiry_year']}|{card['cvv']}\nGATEWAY {gateway}\nSTATUS= {result['reason']}\n--------------BIN INFO-------------\nINFO= {bin_info['brand']}/{bin_info['type']}\nISSUER= {bin_info['issuer']}\nCOUNTRY= {bin_info['country']} {bin_info['flag']}\nCURRENCY= {bin_info['currency']}\n──────────✉───────────\nBY : @kuntaldebnath"
+    return f"✵ NARUTO CHECKER ✵\n------------------------------------------------\nCARD {card['number']}|{card['expiry_month']}|{card['expiry_year']}|{card['cvv']}\nGATEWAY {gateway}\nSTATUS= {result['reason']}\n--------------BIN INFO-------------\nINFO= {bin_info['brand']}/{bin_info['type']}\nISSUER= {bin_info['issuer']}\nCOUNTRY= {bin_info['country']} {bin_info['flag']}\nCURRENCY= {bin_info['currency']}\n──────────✉───────────\nBY : @kuntaldebnath"
 
 @bot.message_handler(commands=['start'])
 def start_command(message):
